@@ -21,7 +21,6 @@ ul. li {
 
 body {
     font-family: 'PT Serif', serif;
-    /*font-family: 'Roboto', sans-serif;*/
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -324,7 +323,6 @@ header {
 .about {
     background: url("../img/about-fon.png") no-repeat center;
     background-size: cover;
-    min-height: 300px;
     padding: 25px 0 45px;
 }
 
@@ -444,14 +442,15 @@ header {
 .advantages {
     background: url("../img/advantages.png") no-repeat center;
     background-size: cover;
-    min-height: 285px;
     color: #ffffff;
+    padding: 55px 0 40px;
 }
 
 .advantages__items {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    height: 100%;
 }
 
 .advantages__item {
@@ -464,7 +463,7 @@ header {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
-    padding-top: 120px;
+    padding-top: 65px;
 
 }
 
@@ -474,19 +473,93 @@ header {
     font-family: 'icomoon';
     font-size: 14px;
     line-height: 24px;
-    top: 40px;
-    left: 145px;
-    align-items: center;
-    text-align: center;
-    border: 3px solid #ffc222;
-    padding: 5px 10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ffc222;
+    padding: 6px 11px;
 }
 
 .advantages__text {
     line-height: 24px;
+    padding-top: 20px;
     letter-spacing: 0.1px;
     color: #d3d2d2;
 }
+
+
+/*NEWS*/
+.news {
+    padding: 55px 0 110px;
+    background-color: #f9f9f9;
+}
+
+.news__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__slider {
+    max-width: 555px;
+    box-shadow: 0 5px 15.36px 0.64px rgba(128, 127, 127, 0.13);
+    background-color: #ffffff;
+    position: relative;
+}
+
+.news__title-slider {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #242424;
+}
+
+.news__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.news__text {
+    letter-spacing: 0.1px;
+    padding-top: 20px;
+    color: #5e5e5e;
+}
+
+.news__text-bottom {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1px;
+    padding-top: 38px;
+    color: #212020;
+}
+
+.news__blog {
+    max-width: 262px;
+}
+
+.news__blog:hover {
+    background-color: rgba(255, 194, 34, 0.18);
+    transition: .3s;
+}
+
+.news__slider-content {
+    padding: 65px 35px 45px 70px;
+}
+
+.news__slider:before {
+    position: absolute;
+    content: "\f10e";
+font-size: 16px;
+    font-family: 'icomoon';
+    background-color: #ffc222;
+    padding: 7px 24px;
+    left: 70px;
+    color: white;
+}
+
 
 
 
