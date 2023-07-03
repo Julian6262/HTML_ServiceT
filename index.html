@@ -11,13 +11,16 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -110,20 +113,18 @@
 </section>
 
 <section class="services">
-
     <div class="container">
-        <div class="services__top">
-            <div class="services__title-box">
-                <div class="services__title">
+        <div class="default-top">
+            <div class="default-top__title-box">
+                <div class="default-top__title">
                     Наши Услуги
                 </div>
-                <div class="services__text">
+                <div class="default-top__text">
                     Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех
                     судебных инстанциях.
                 </div>
-
             </div>
-            <div class="services__btn">
+            <div class="default-top__btn">
                 <a href="#">
                     Показать все услуги
                 </a>
@@ -185,7 +186,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <section class="about">
@@ -205,6 +205,55 @@
                 Узнать больше
             </a>
         </div>
+    </div>
+</section>
+
+<section class="form">
+    <div class="container">
+
+        <div class="form__top default-top">
+            <div class="default-top__title-box">
+                <div class="default-top__title">
+                    Получить Консультацию
+                </div>
+                <div class="default-top__text">
+                    Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех
+                    судебных инстанциях.
+                </div>
+            </div>
+        </div>
+
+        <form class="form__box">
+            <div class="form__box-left">
+                <label>E-mail
+                    <input type="text">
+                </label>
+                <label>Контактный телефон
+                    <input type="text">
+                </label>
+                <label>ФИО
+                    <input type="text">
+                </label>
+                <label>Тема вопроса
+                    <select>
+                        <option>----------------</option>
+                        <option>----------------</option>
+                        <option>----------------</option>
+                        <option>----------------</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form__box-right">
+                <label>Сообщение
+                    <textarea></textarea>
+                </label>
+                <button class="form__btn default-btn" type="submit">
+                    Получить консультацию
+                </button>
+            </div>
+        </form>
+
     </div>
 </section>
 

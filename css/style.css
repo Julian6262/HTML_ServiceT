@@ -13,10 +13,6 @@ ul. li {
     list-style: none;
 }
 
-header {
-    font-family: 'Roboto', sans-serif;
-}
-
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -30,6 +26,12 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e;
+}
+
+
+/*HEADER*/
+header {
+    font-family: 'Roboto', sans-serif;
 }
 
 .header__top {
@@ -127,6 +129,8 @@ body {
     display: none;
 }
 
+
+/*SLIDER*/
 .slider {
     background: url("../img/slider-fon.png") no-repeat center;
     background-size: cover;
@@ -214,24 +218,26 @@ body {
     cursor: default;
 }
 
+
+/*SERVICES*/
 .services {
     padding: 50px 0 30px;
 }
 
-.services__top {
+.default-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 60px;
 }
 
-.services__title-box {
+.default-top__title-box {
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
 
-.services__title-box:before {
+.default-top__title-box:before {
     content: "";
     position: absolute;
     left: 0;
@@ -241,7 +247,7 @@ body {
     background-color: #ffc222;
 }
 
-.services__title {
+.default-top__title {
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
@@ -250,11 +256,11 @@ body {
     padding-bottom: 10px;
 }
 
-.services__text {
+.default-top__text {
     letter-spacing: 0.1px;
 }
 
-.services__btn a {
+.default-top__btn a {
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
     letter-spacing: 0.25px;
@@ -347,6 +353,94 @@ body {
     letter-spacing: 0.25px;
     margin-top: 35px;
 }
+
+
+/*FORM*/
+/*Часть закомментил в formstyler.theme.css,*/
+/*в style не стал перебивать стили*/
+.form .container {
+    padding: 45px 15px 40px;
+    min-height: 520px;
+    background: url("../img/girl.png") no-repeat 100% 100%;
+}
+
+.form__box {
+    display: flex;
+    max-width: 850px;
+    justify-content: space-between;
+}
+
+.form__top {
+    padding-bottom: 30px;
+}
+
+.form label {
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    display: block;
+    padding-top: 10px;
+    color: #282828;
+}
+
+.form input, .form select {
+    width: 260px;
+    height: 40px;
+    appearance: none;
+}
+
+.form input {
+    padding: 0 10px;
+}
+
+.form textarea {
+    width: 560px;
+    height: 212px;
+    margin-bottom: 46px;
+    padding: 10px 10px;
+    resize: none;
+}
+
+.form input, .form select, .form textarea, .form .jq-selectbox.jqselect {
+    border: 1px solid #e6e6e6;
+    display: block;
+    outline: none;
+}
+
+.form .jq-selectbox.jqselect {
+    padding-left: 17px;
+    padding-top: 2px;
+    color: #cdcdcd;
+}
+
+.form__btn, .form__btn:before {
+    background-color: transparent;
+    color: #282828;
+    float: right;
+    height: 40px;
+}
+
+.jq-selectbox__trigger-arrow:before {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    color: #898888;
+    left: 10px;
+    transform: rotate(90deg);
+}
+
+.jq-selectbox li {
+    color: #898888;
+    min-height: 40px;
+    padding-left: 17px;
+    padding-top: 10px;
+}
+
+.jq-selectbox:hover .jq-selectbox__trigger-arrow:before {
+    color: #000;
+}
+
+
+
 
 
 
