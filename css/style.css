@@ -455,7 +455,7 @@ header {
 }
 
 .advantages__item {
-    max-width: 330px;
+    width: 330px;
     position: relative;
 }
 
