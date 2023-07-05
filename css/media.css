@@ -8,6 +8,30 @@
         width: 80%;
         margin-bottom: 30px;
     }
+
+    .form .container {
+        background-image: none;
+    }
+
+    .form__box {
+        max-width: none;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 869px) {
+    .form__box-left {
+        width: 100%;
+    }
+
+    .form__box-right {
+        width: 100%;
+    }
+
+    .form input, .form select, .form textarea {
+        width: 100%;
+    }
 }
 
 
